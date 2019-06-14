@@ -1,0 +1,269 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media (max-width: 1320px)
+    .features
+        background-position: left -400px top 0   
+@media (max-width: 1140px)
+    .header__wrapper
+        padding: 0 20px
+    .header
+        background-size: 170px 220px , 0px 0px, 141px 242px, cover  
+    .services__wrapper
+        width: 100%
+    .services__items
+        flex-wrap: wrap   
+    .services__item
+        margin: 0 auto    
+    .nav__li
+        margin-right: 0
+    .nav__ul
+        padding-left: 20px  
+        justify-content: flex-end  
+    .footer__wrapper
+        width: 100%          
+// ≥1200px
++media-breakpoint-down(lg)
+    .other-items
+        height: auto
+    .slider__wrapper
+        width: 100%
+        
+    .carousel
+        width: 100%
+        position: relative 
+    .resource__wrapper
+	    width: 100%    
+    .subscribe__wrapper
+        width: 100%
+    .footer__items
+        width: 100%    
+@media (max-width: 1090px)
+    .other-items__wrapper
+        width: 100%
+        height: auto
+    .other-items__top , .other-items__bottom
+        height:  auto
+        width: 100%
+    .other-items__items
+        width: 100%
+    .prices__wrapper
+        width: 100%
+    .prices__items
+        flex-wrap: wrap
+        justify-content: space-around
+    .prices
+        height: auto
+
+@media (max-width: 1020px)
+    .other-items__top
+        margin-bottom: 40px        
+// ≥992px
++media-breakpoint-down(md)
+    .nav__li
+        margin-right: 0px
+    .nav__ul
+        margin-bottom: 0
+    .nav__li a
+        padding: 1px 10px   
+    .features
+        background-position: left -600px top 0   
+    .services
+        height: 890px   
+    .footer__top
+        padding-right: 30px    
+@media (max-width: 880px)
+    .header__wrapper
+        width: 100%
+    .button__toggle
+        display: block
+        z-index: 2
+        width: 70px;
+        height: 50px;
+        background: gray;
+        cursor: pointer;
+        border: none;
+        position: absolute
+        top: 0px
+        right: 0
+        
+    .nav--closed
+        .button__toggle
+            &:before
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: 17px;
+                width: 36px;
+                height: 2px;
+                background: #ffffff;
+                box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    .nav--opened
+        .button__toggle
+            top: 0
+            right: auto
+            left: 0
+            &:before, &:after
+                content: ''
+                position: absolute 
+                top: 24px
+                left: 18px
+                width: 36px
+                height: 2px
+                background: white
+            &:before
+                transform: rotate(45deg)
+                
+            &:after
+                transform: rotate(-45deg)
+            &:active::before, &:active::after
+                background-color: rgba(255,255,255,.3)            
+    .nav__ul
+	    display: flex
+	    flex-direction: column
+	    min-height: 50px
+    .nav
+	    padding-top: 0px
+	    position: relative
+	    width: 100%
+	    margin: 0 auto
+	    min-height: 51px
+	    background: transparent
+	    font-weight: bold    
+    .site__list
+	    min-height: 30px	    
+    .nav--closed
+        .nav__li
+            display: none
+        .nav__li--active
+            display: block
+            a
+                padding-right: 70px
+                padding-left: 70px
+                text-align: center
+
+    .nav__wrapper
+        height: 80px
+    .nav--opened
+        .nav__wrapper
+            position: absolute
+            top: 0
+            right: 0
+            left: 70px
+            z-index: 10
+            min-height: 54vh
+            background: gray
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                width: 7px
+                height: 100%
+                  
+    .nav--nojs
+        .button__toggle
+            display: none
+        .nav__wrapper
+            position: static
+            min-height: 0
+        .nav__li
+            display: block
+            
+        .nav__li a
+            padding-right: 21px
+            padding-left: 21px
+            text-align: left   
+// ≥768px
++media-breakpoint-down(sm)
+    .features
+        background-position: left -900px top 0   
+    .other-items__item
+        width: 100%
+        &:nth-of-type(4)
+            img
+                margin-right: 10px  
+        &:nth-of-type(3)
+            img
+                margin-right: 10px  
+            &:last-child
+                img
+                    margin-right: 19px    
+        &:nth-of-type(1)
+            &:nth-child(1)
+                img
+                    &:first-child
+                        margin-right: 25px  
+        &:nth-of-type(2)
+            img
+                margin-right: 14px 
+            &:last-child
+                img
+                    margin-right: 40px    
+        &:nth-of-type(6)
+            img
+                margin-right: 20px  
+        &:nth-of-type(3)
+            &:nth-child(1) 
+                img
+                   
+
+                    margin-right: 90px  
+    .footer__top
+        padding-bottom: 30px                                            
+@media (max-width: 618px)
+    .services
+        height: 1200px
+    .features__text
+        padding-top: 60px
+    .features
+        height: auto     
+    .resource__wrapper
+        .col
+            img
+                width: 100%
+                padding: 40px 0
+    .carousel
+        img
+            width: 100% !important                                                  
+// ≥576px
++media-breakpoint-down(xs)
+    .header__buttons
+        flex-direction: column
+    .header__gs
+        margin-bottom: 30px 
+@media (max-width: 500px)
+    .logo-nav
+        flex-direction: column
+    .nav__ul
+        padding-left: 0
+    .nav
+        width: 100%                 
+@media (max-width: 480px)
+    .header__text
+        margin: 60px 0
+    .header
+        height: auto
+        background-position: left 0px bottom 10px  , left -420px top -50px , right -80px top 440px , left
+    .header__h1
+        line-height: 1.2    
+    .header__buttons
+        width: 100%
+        text-align: center
+        align-items: center
+    .carousel
+        width: 90%
+@media (max-width: 400px)
+    .form__name , .form__email , .form--subscribe
+        width: 100%
+    .form
+        width: 90%    
+    .footer__item
+        width: 100%
+    .footer__bottom
+        p
+            padding: 0
+            &:first-child
+                padding-top: 30px        

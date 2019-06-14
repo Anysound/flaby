@@ -190,6 +190,7 @@ body
 		font-weight: 600;
 		line-height: 26px;
 		padding-top: 14px	
+		width: 300px
 	img
 		margin-bottom: auto
 /*features*/
@@ -498,6 +499,7 @@ body
 	display: flex
 	flex-direction: column
 	padding-top: 70px
+	width: 370px
 	input
 		margin-bottom: 26px
 .form__name
@@ -532,4 +534,94 @@ body
 	border-radius: 38px;
 	background-color: #66d4f4;	
 	text-transform: uppercase
+.footer__wrapper
+	display: flex
+	flex-direction: column
+	padding-top: 53px
+	width: 1170px
+	margin: 0 auto
+	
+.footer__top
+	display: flex
+	flex-wrap: wrap
+	border-bottom: 1px solid #dfdfdf
+	padding: 0 30px
+	padding-bottom: 50px
+	padding-right: 77px
+	justify-content: space-between
+.footer__flaby
+	width: 300px
+	margin-bottom: 50px
+	p
+		color: #7c7c7c;
+		font-family: raleway , sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 28px;
+		margin-top: 20px
+.footer__icons
+	display: flex
+	.fb, .gl , .tw
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		color: white
+		margin-right: 10px
+	.fb
+		background: #3b579d
+	.gl
+		background: #da4835
+	.tw
+		background: #55acee		
+.footer__item
+	display: flex
+	flex-direction: column
+	.footer__h2
+		color: #494949;
+		font-family: 'raleway-semibold' , sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+	span
+		color: #7c7c7c;
+		font-family: raleway , sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 28px;
+.footer__bottom
+	display: flex
+	flex-wrap: wrap
+	height: 97px
+	padding-left: 30px
+	p
+		color: #7c7c7c;
+		font-family: Raleway;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 28px;
+		padding-top: 34px
+		margin-right: 34px
+		position: relative
+		white-space: nowrap
+		&:first-child
+			
+			
+			&:after
+				content: '|'
+				position: absolute
+				left: 120px
+		&:nth-child(2)
+			&:after
+				content: '|'
+				position: absolute
+				left: 133px		
+		span
+			font-weight: 1300
+.footer__items
+	display: flex
+	width: 70%
+	justify-content: space-between	
+	flex-wrap: wrap											
 @import "media" // Always at the end
