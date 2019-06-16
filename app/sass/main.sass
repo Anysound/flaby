@@ -257,7 +257,13 @@ body
 	color: white
 	font-family: 'raleway'
 	font-weight: 600
-	letter-spacing: 1.4px;			
+	letter-spacing: 1.4px;
+	transition: all .3s
+	&:hover
+		box-shadow: 0 -10px 16px rgba(102, 212, 244, 0.3),
+		0 10px 16px rgba(152,212,114,0.3)
+		transform: scaleX(1.05) scaleY(1.05)
+		
 /*other-items*/
 .other-items
 	display: flex
@@ -429,6 +435,10 @@ body
 	height: 581px
 	background-size: 100%
 	background-image: url('../img/3-layers_(1).png')
+	transition: all .3s
+	border-radius: 22px
+	&:hover
+		box-shadow: 0 0 5px 3px #e6e6e6
 	&:last-child
 		.price
 			sub
